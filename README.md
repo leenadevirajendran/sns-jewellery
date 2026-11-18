@@ -46,3 +46,11 @@ Artwork: `assets/img/p01–p12.svg` are placeholder illustrations — replace wi
 
 ## Round 8
 - Our Story gallery: hero arch + two matching ivory product cards (framed photo, caption below, arrow).
+
+## Round 9
+- Mobile header: logo left, wishlist/cart/menu pinned right; no horizontal overflow checked at 360/390/768 on all pages.
+- Footer logo has no hover effect.
+- Category dropdown closes after a link is used and reopens only on a fresh hover.
+
+## Round 10
+- Mobile header edges now align with page content; search/account icons hidden on mobile; burger glyph lines up with right content edge.

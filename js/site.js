@@ -98,3 +98,15 @@ window.SNS_PRODUCTS = {"p21": {"name": "Panchaloham Polish Screw Back Studs with
   }
   window.addEventListener("hashchange", applyHash); document.addEventListener("DOMContentLoaded", applyHash);
 })();
+
+/* Close a category dropdown after a link inside it is used; reopen only on a fresh hover */
+(function () {
+  document.querySelectorAll(".has-sub").forEach(function (li) {
+    li.addEventListener("click", function (e) {
+      if (!e.target.closest("a")) return;
+      li.classList.add("closed");
+      if (document.activeElement && document.activeElement.blur) document.activeElement.blur();
+    });
+    li.addEventListener("mouseleave", function () { li.classList.remove("closed"); });
+  });
+})();
